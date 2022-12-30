@@ -37,7 +37,7 @@ class Config((object)):
     # watermark file
     DEF_WATER_MARK_FILE = ""
     # Sql Database url
-    DB_URI = os.environ.get("DATABASE_URL", "-1001767363693")
+    DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://aio:aio@aio.5z4gxok.mongodb.net/?retryWrites=true&w=majority")
     # dict to hold Google Drive SignIns
     G_DRIVE_AUTH_DRQ = {}
     # g_drive
