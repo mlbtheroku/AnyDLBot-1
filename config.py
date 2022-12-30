@@ -4,19 +4,19 @@ import os
 
 class Config((object)):
     # get a token from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5833550185:AAFzUdwF-uiFxIVwzrVS7VepS5GH9tfv0Bk")
     # The Telegram API things
-    APP_ID = int(os.environ.get("APP_ID", 12345))
-    API_HASH = os.environ.get("API_HASH")
+    APP_ID = int(os.environ.get("APP_ID", 15830858))
+    API_HASH = os.environ.get("API_HASH", "5833550185:AAFzUdwF-uiFxIVwzrVS7VepS5GH9tfv0Bk")
     # Get these values from my.telegram.org
     # Array to store users who are authorized to use the bot
-    AUTH_USERS = {int(x) for x in os.environ.get("AUTH_USERS", "").split()}
+    AUTH_USERS = {int(x) for x in os.environ.get("AUTH_USERS", "5468192421").split()}
     # Banned Unwanted Members..
     BANNED_USERS = {int(x) for x in os.environ.get("BANNED_USERS", "").split()}
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     # Update channel for Force Subscribe
-    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
+    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "-1001767363693")
     # Telegram maximum file upload size
     MAX_FILE_SIZE = 50000000
     TG_MAX_FILE_SIZE = 2097152000
@@ -37,10 +37,10 @@ class Config((object)):
     # watermark file
     DEF_WATER_MARK_FILE = ""
     # Sql Database url
-    DB_URI = os.environ.get("DATABASE_URL", "")
+    DB_URI = os.environ.get("DATABASE_URL", "-1001767363693")
     # dict to hold Google Drive SignIns
     G_DRIVE_AUTH_DRQ = {}
     # g_drive
-    IS_TEAM_DRIVE = os.environ.get("IS_TEAM_DRIVE", False)
-    USE_SERVICE_ACCOUNTS = os.environ.get("USE_SERVICE_ACCOUNTS", False)
-    INDEX_URL = os.environ.get("INDEX_URL", "")
+    IS_TEAM_DRIVE = os.environ.get("IS_TEAM_DRIVE", True)
+    USE_SERVICE_ACCOUNTS = os.environ.get("USE_SERVICE_ACCOUNTS", True)
+    INDEX_URL = os.environ.get("INDEX_URL", "https://nyinyileech.tgnyinyi443.workers.dev/0:")
